@@ -3,5 +3,5 @@
 
 `Homework assignments checked if completed`
 
--[] Homework day 1
--[] Homework day 2
+- [ ] Homework day 1
+- [ ] Homework day 2
