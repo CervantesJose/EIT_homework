@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>struct Cookie {
+    var size: Int = 5
+    
+    var hasChocoChips: Bool = false
+    
+}
+
+class Bakery{
+    var delegate:BakeryDelegate?
+    
+    func makeCookie() {
+        var cookie = Cookie()
+        
+        cookie.size = 6
+        cookie.hasChocoChips = true
+        
+        delegate?.cookieWasBaked(cookie)
+    }
+    
+}
+
+protocol BakeryDelegate{
+    func cookieWasBaked(_ cookie: Cookie)
+}
+
+class CookieShop: BakeryDelegate {
+    func cookieWasBaked(_ cookie: Cookie) {
+        print("yay! A new cookie was baked with size \(cookie.size)")
+    }
+}
+
+let shop = CookieShop()
+
+let bakery = Bakery()
+
+bakery.delegate = shop
+
+bakery.makeCookie()
+
+    //Output: yay! a new cookie was baked with size 6
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 701}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
