@@ -5,5 +5,8 @@
 
 - [x] Homework day 1
 - [x] Homework day 2
-- [ ] Homework day 3
+- [x] Homework day 3
 - [x] Homework day 4
+- [x] Homework day 5
+- [ ] Homework day 6
+- [ ] Homework day 7
