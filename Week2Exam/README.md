@@ -1,4 +1,4 @@
-#Week 2 Quiz Answers
+# Week 2 Quiz Answers
 
 Q - What is a TabBarController(what are its uses)?
 A - A TabBarController is used to create a list of tabs on the bottom of the screen. Each tab has its own view within the app. This style of creating a tab view controller is extremely common in the app community. (Snapchat, Instagram, Facebook, YouTube, etc.)
