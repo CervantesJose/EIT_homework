@@ -9,3 +9,4 @@
 - [x] Homework day 4
 - [x] Homework day 5
 - [x] Exam1 and Quiz
+- [x] Rick and Morty API
