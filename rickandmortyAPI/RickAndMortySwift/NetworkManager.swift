@@ -17,35 +17,6 @@ class NetworkManager {
     enum endpoints: String {
         case character
         case location
-        case episode
-    }
-    
-    public func getEpisodesData(
-        page: Int, completion: @escaping (Result<PagedEpisode, Error>) -> Void
-    ) {
-        
-        print(URL(string: Constants.baseURL + endpoints.episode.rawValue + "/?page=\(String(page))") ?? "Printed episode url")
-        guard let url = URL(string: Constants.baseURL + endpoints.episode.rawValue + "/?page=\(String(page))") else {
-            return
-        }
-        
-        let task = URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data, error == nil else {
-                return
-            }
-            
-            do {
-                let episodes = try JSONDecoder().decode(PagedEpisode.self, from: data)
-                
-                completion(.success(episodes))
-            }
-            catch {
-                completion(.failure(error))
-            }
-        }
-        
-        task.resume()
-        
     }
     
     
@@ -93,33 +64,6 @@ class NetworkManager {
             task.resume()
             
         }
-    }
-    
-    public func getLocationsData(page: Int, completion: @escaping (Result<PagedLocation, Error>) -> Void
-    ) {
-        
-        print(URL(string: Constants.baseURL + endpoints.location.rawValue + "/?page=\(String(page))") ?? "Printed location url")
-        guard let url = URL(string: Constants.baseURL + endpoints.location.rawValue + "/?page=\(String(page))") else {
-            return
-        }
-        
-        let task = URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data, error == nil else {
-                return
-            }
-            
-            do {
-                let locations = try JSONDecoder().decode(PagedLocation.self, from: data)
-                
-                completion(.success(locations))
-            }
-            catch {
-                completion(.failure(error))
-            }
-        }
-        
-        task.resume()
-        
     }
     
     public func getEpisodesForCharacter(characterURL: String?, completion: @escaping (Result<Episode, Error>) -> Void) {
