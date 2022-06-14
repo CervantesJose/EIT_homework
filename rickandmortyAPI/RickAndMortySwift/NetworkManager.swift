@@ -7,10 +7,10 @@
 
 import Foundation
 
-final class NetworkManager {
+class NetworkManager {
     static let shared = NetworkManager()
     
-    private struct Constants {
+    struct Constants {
         static let baseURL = "https://rickandmortyapi.com/api/"
     }
     
@@ -18,15 +18,6 @@ final class NetworkManager {
         case character
         case location
         case episode
-        case avatar
-    }
-    
-    private init() {}
-    
-    // MARK: - Public
-    
-    public func getAllData(){
-        
     }
     
     public func getEpisodesData(
