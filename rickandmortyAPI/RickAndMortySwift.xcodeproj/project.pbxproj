@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02C1C75F28593D5B00306402 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C1C75E28593D5B00306402 /* Episode.swift */; };
+		02A3CBB1285A0BDF0036A2C9 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A3CBB0285A0BDF0036A2C9 /* Episode.swift */; };
 		E8398E6D2645C3A0007C5661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8398E6C2645C3A0007C5661 /* AppDelegate.swift */; };
 		E8398E6F2645C3A0007C5661 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8398E6E2645C3A0007C5661 /* SceneDelegate.swift */; };
 		E8398E742645C3A0007C5661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8398E722645C3A0007C5661 /* Main.storyboard */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02C1C75E28593D5B00306402 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Episode.swift; path = ../../../../../.Trash/Episode.swift; sourceTree = "<group>"; };
+		02A3CBB0285A0BDF0036A2C9 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		E8398E692645C3A0007C5661 /* RickAndMortySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8398E6C2645C3A0007C5661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8398E6E2645C3A0007C5661 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				E8398E882645CC99007C5661 /* Character.swift */,
-				02C1C75E28593D5B00306402 /* Episode.swift */,
 				E8398E8E2645DF80007C5661 /* Info.swift */,
+				02A3CBB0285A0BDF0036A2C9 /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 				E8398E842645C45E007C5661 /* NetworkManager.swift in Sources */,
 				E8398E8F2645DF80007C5661 /* Info.swift in Sources */,
 				E8398E6D2645C3A0007C5661 /* AppDelegate.swift in Sources */,
-				02C1C75F28593D5B00306402 /* Episode.swift in Sources */,
+				02A3CBB1285A0BDF0036A2C9 /* Episode.swift in Sources */,
 				E8398E972646022A007C5661 /* CharacterCellTableViewCell.swift in Sources */,
 				E8398E892645CC99007C5661 /* Character.swift in Sources */,
 				E8398E6F2645C3A0007C5661 /* SceneDelegate.swift in Sources */,
